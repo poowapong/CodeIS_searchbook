@@ -40,6 +40,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <th> Publisher </th>
                         <th> Publish_date </th>
                         <th> Price </th>
+						<th> PriceTH </th>
+						<th> Thickness </th>
                     </tr>
                     <tr>'."\n";
 
@@ -68,7 +70,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         case 5:
           echo "<td> "."$value </td>\n";
           $index = $index+1;
-          break;  
+          break;
+		case 6:
+          echo "<td> "."$value </td>\n";
+          $index = $index+1;
+          break;
+		case 7:
+          echo "<td> "."$value </td>\n";
+          $index = $index+1;
+          break;
         
       }
       if(($key+1) %6 ==0 ){
